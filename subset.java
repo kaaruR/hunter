@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.Scanner;
 public class subset
 {
@@ -28,6 +29,16 @@ for(int l=0;l<size2;l++)
 if(arr1[k]==arr2[l])
 {
 count=count+1;
+}
+}
+}
+if(count==size2)
+{
+System.out.println("yes it is a subset");
+}
+else
+{
+System.out.println("not a subset");
 }
 }
 }
