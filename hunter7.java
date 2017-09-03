@@ -5,26 +5,26 @@ public class hunter4
     {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the size of the array");
-        int size=sc.nextInt();
+        int s=sc.nextInt();
         System.out.println("Enter the array elements ");
-        String arr[]=new String[size];
-        for(int i=0;i<size;i++)
+        String sarr[]=new String[s];
+        for(int i=0;i<s;i++)
         {
-            arr[i]=sc.next();
+            sarr[i]=sc.next();
         }
-        for(int i=0;i<size;i++)
+        for(int i=0;i<s;i++)
         {
-            int count=0;
-            for(int j=0;j<size;j++)
+            int c=0;
+            for(int j=0;j<s;j++)
             {
-                if(arr[i].equals(arr[j]))
+                if(sarr[i].equals(sarr[j]))
                 {
                 count=count+1;
                 }
             }
-            if(count==1)
+            if(c==1)
             {
-                System.out.println("unique number: "+arr[i]);
+                System.out.println("unique number: "+sarr[i]);
                 break;
             }
         }
